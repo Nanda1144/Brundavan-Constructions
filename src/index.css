@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-brand-blue: #0A1F44;
+  --color-brand-gold: #D4AF37;
+  --color-brand-light: #F5F7FA;
+  --color-brand-dark: #050F22;
+  
+  --font-outfit: "Outfit", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+  --animate-scale-up: scaleUp 0.5s ease-out forwards;
+  --animate-gradient: shimmer 3s linear infinite;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@layer base {
+  body {
+    @apply bg-brand-light text-brand-blue font-inter antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-outfit font-bold;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  .btn-primary {
+    @apply bg-brand-blue text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-brand-blue/90 hover:shadow-lg hover:-translate-y-1 active:scale-95;
+  }
+  
+  .btn-gold {
+    @apply bg-brand-gold text-brand-blue px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-brand-gold/90 hover:shadow-lg hover:-translate-y-1 active:scale-95;
+  }
+
+  .section-padding {
+    @apply py-20 px-6 lg:px-24;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-brand-light;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-blue/20 rounded-full hover:bg-brand-blue/40;
+}
