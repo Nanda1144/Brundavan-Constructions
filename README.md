@@ -1,16 +1,101 @@
-# React + Vite
+# 🏗️ Brundhavan Constructions Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive, and visually premium static website developed for a construction company. This project showcases services, founder details, and allows users to contact directly via email — all with a smooth, animated user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- ✨ Elegant and premium UI/UX design
+- 🎯 Auto popup for "Philosophy & Vision"
+- 🏗️ Services section with animated scroll effects
+- 👷 Founder profile with highlighted achievements
+- 📊 Dynamic stats (experience, projects, specialization)
+- 📸 On-site work gallery
+- 📩 Contact form with email functionality (EmailJS)
+- 📱 Fully responsive (mobile + desktop)
+- ⚡ Smooth animations and transitions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🖼️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React.js / HTML / CSS / JavaScript
+- **Styling:** Tailwind CSS
+- **Animations:** CSS / Framer Motion (optional)
+- **Email Service:** EmailJS (no backend required)
+
+---
+
+## 📂 Project Structure
+project-root/
+│
+├── public/
+│ └── images/
+│ ├── service1.jpg
+│ ├── service2.jpg
+│ ├── founder.jpg
+│ ├── site1.jpg
+│ └── ...
+│
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── data/
+│ └── App.js
+│
+├── package.json
+└── README.md
+
+---
+
+## 🔧 Setup & Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/brundhavan-Constructions.git
+Navigate to project folder:
+cd brundhavan-Constructions
+Install dependencies:
+npm install
+Start development server:
+npm start
+📩 Email Integration (Important)
+
+This project uses EmailJS to send messages directly from the frontend.
+
+Setup Steps:
+Create account on https://www.emailjs.com/
+Create:
+Email Service
+Email Template
+Add your credentials in code:
+emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+  user_name: name,
+  user_email: email,
+  user_phone: phone,
+  message: message
+}, "YOUR_PUBLIC_KEY")
+🖼️ Images
+All images are stored locally in /public/images
+Replace placeholder images with actual project images
+🎯 Key Highlights
+Designed with a premium corporate feel
+Focus on user experience and smooth animations
+Built as a fully static site (no backend required)
+Optimized for performance and responsiveness
+🌐 Deployment
+
+You can deploy easily using:
+
+Vercel
+Netlify
+GitHub Pages
+📌 Future Enhancements
+Admin panel for content management
+Blog section
+SEO optimization
+Performance optimization
+👨‍💻 Author
+
+Developed by Nanda Kishore, Manil Kumar.

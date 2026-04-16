@@ -39,10 +39,10 @@ const Stats = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-        className="max-w-4xl mx-auto mt-20 p-8 glass-card border-2 border-black rounded-3xl text-center group cursor-default"
+        className="max-w-4xl mx-auto mt-20 p-8 glass-card border-brand-gold/20 rounded-3xl text-center group cursor-default"
       >
-        <h3 className="text-black uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold mb-4">Key Performance Project</h3>
-        <p className="text-2xl md:text-4xl font-outfit leading-tight text-brand-gold" style={{ WebkitTextStroke: '0.5px black' }}>
+        <h3 className="text-white/60 uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold mb-4">Key Performance Project</h3>
+        <p className="text-2xl md:text-4xl font-outfit leading-tight text-brand-gold">
           "Krishna Sindhura Hospitals – A benchmark in healthcare infrastructure"
         </p>
         <div className="mt-6 w-16 h-0.5 bg-brand-gold mx-auto group-hover:w-32 transition-all duration-500" />

@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <img src="/logo.jpg" alt="Brundavan logo" className="w-12 h-12 rounded-lg object-cover shadow-sm" />
           <span className={`font-outfit font-bold text-xl tracking-tight transition-colors ${isScrolled ? 'text-brand-blue' : 'text-white'}`}>
-            BRUNDAVAN <span className="text-brand-gold">CONSTRUCTION</span>
+            BRUNDAVAN <span className="text-brand-gold"> CONSTRUCTIONS</span>
           </span>
         </div>
 
