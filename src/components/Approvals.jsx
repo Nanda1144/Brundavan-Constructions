@@ -7,7 +7,7 @@ const certificates = [
     title: "Official Approval Certificate",
     authority: "Government of Andhra Pradesh",
     number: "AP/CONST/APPR/2021/00892",
-    issued: "2021",
+    issued: "2024",
     valid: "Ongoing",
     description: "This official approval certificate issued by the Government of Andhra Pradesh confirms that Brundavan Construction meets all regulatory, structural, and environmental standards required for residential and commercial construction.",
     highlights: ["Government Certified", "Legal Compliance Verified", "Environmental Standards Met", "Full Project Authorization"],
